@@ -11,6 +11,8 @@ const scopes = [
     'user-read-playback-state',
     'user-top-read',
     'user-modify-playback-state',
+    'app-remote-control',
+    'user-read-playback-position',
 ];
 
 export const getTokenFromURL = () => {

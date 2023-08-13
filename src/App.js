@@ -46,12 +46,26 @@ function App() {
                     discover_weekly: response,
                 })
             );
+
+            // search tracks whose name, album or artist contains 'Love'
+            spotify
+                .searchTracks('Love')
+                .then((data) =>
+                    dispatch({ type: 'SEARCH_TRACKS', searchedTracks: data })
+                );
+
+            // search artists whose name contains 'Love'
+            spotify
+                .searchArtists('input')
+                .then((data) =>
+                    dispatch({ type: 'SEARCH_ARTISTS', searchedArtists: data })
+                );
         }
     }, []);
 
     return (
         <div className="app">
-            {token ? <Player spotify={spotify} /> : <Login />}
+            {token ? <Player spotify={spotify} token={token} /> : <Login />}
         </div>
     );
 }
