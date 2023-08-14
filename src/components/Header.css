@@ -1,15 +1,15 @@
 .header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 1.8rem;
 }
 .header_left {
     flex: 0.5;
-    min-width: 70px;
+    min-width: 4.4rem;
     background-color: white;
     color: gray;
-    border-radius: 30px;
-    padding: 10px;
+    border-radius: 1.8rem;
+    padding: 0.6rem;
     display: flex;
     align-items: center;
 }
@@ -23,5 +23,5 @@
     align-items: center;
 }
 .header_right h4 {
-    margin-left: 10px;
+    margin-left: 0.6rem;
 }

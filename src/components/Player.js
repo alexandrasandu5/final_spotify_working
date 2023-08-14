@@ -1,17 +1,17 @@
-import React from 'react';
+import { React } from 'react';
 import Body from './Body';
 import Footer from './Footer';
 import './Player.css';
 import Sidebar from './Sidebar';
 
-function Player({ spotify }) {
+function Player({ spotify, token }) {
     return (
         <div className="player">
             <div className="player_body">
                 <Sidebar />
-                <Body spotify={spotify} />
+                <Body spotify={spotify} token={token} />
             </div>
-            <Footer />
+            <Footer token={token} />
         </div>
     );
 }

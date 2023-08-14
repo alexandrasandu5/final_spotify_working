@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     color: grey;
-    height: 40px;
+    height: 2.5rem;
     cursor: pointer;
     transition-delay: 200ms color ease-in;
 }
@@ -12,11 +12,11 @@
 }
 
 .sidebarOption_icon {
-    padding: 0 10px;
+    padding: 0 0.6rem;
 }
 
 .sidebar hr {
     border: 1px solid #282828;
     width: 90%;
-    margin: 10px auto;
+    margin: 0.6rem auto;
 }
